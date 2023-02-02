@@ -1,0 +1,336 @@
+/*  RESETANDO ALGUMAS CONFIGURAÇÕES PADRÕES DO HTML  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    animation: aparecer .3s ease forwards;
+    opacity: 0;
+    background-color: rgb(242, 242, 242);
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*  HEADER DA PÁGINA ONDE FICA A NAVBAR  */
+#header_principal{
+    width: 100%;
+    height: 18vh;
+    
+    background-color: #c7402b;
+}
+
+/*  ESSA SECTION IRÁ DESAPARECER QUANDO A RESOLUÇÃO DA TELA DIMINUIR  */
+#section_para_pc{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/*  ESTILIZANDO ONDE FICA A FOTO E O NOME DO CLIENTE  */
+.primario{
+    width: 100%;
+    height: 8vh;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 0 0 10px;
+
+    border-bottom: 2px solid #d44833;
+    background-color: #c7402b;
+}
+
+#informacao_cliente{
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    color:rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+
+    /* background-color: red; */
+}
+#informacao_cliente a{
+    color: white;
+}
+
+/*  AJUSTANDO A FOTO DO CLIENTE  */
+.foto_usuario{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+}
+.foto_usuario img{
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    
+    border-radius: 50%;
+    object-fit: cover;
+}
+#cliente_sair a{
+    height: 8vh;
+    padding: 0 20px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #bf3c28;
+    border-left: 1px solid #d44833;
+    transition: all .3s;
+}
+#cliente_sair a:hover{
+    background-color: rgb(242, 242, 242);
+    color: #c7402b;
+}
+
+
+
+
+
+/*  AJUSTANDO A NAVEGAÇÃO  */
+.secundario{
+    height: 10vh;
+    width: 100%;
+}
+#nav_bar_cliente{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav_bar_cliente ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+
+    border-left: 1px solid #d44833;
+}
+
+#nav_bar_cliente ul li{
+    height: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #d44833;
+}
+
+
+#nav_bar_cliente ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+
+    padding: 21px 15px;
+
+    border: 1px solid transparent;
+    transition: all .3s;
+    text-align: center;
+}
+
+#nav_bar_cliente ul li a:hover{
+    background-color: rgb(242, 242, 242);
+    color: #c7402b;
+}
+
+#nav_bar_cliente ul li .focar_link{
+    position: relative;
+    z-index: 1;
+}
+#nav_bar_cliente ul li .focar_link::before{
+    transition: all .3s;
+    content: '';
+
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translatex(-50%) rotate(45deg);
+
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+
+    background-color: rgb(241, 241, 241);
+}
+#nav_bar_cliente ul li a:hover::before{
+    background-color: #c7402b;
+}
+
+
+
+
+
+
+
+
+
+/*  PARA CELULAR  */
+#section_para_celular{
+    width: 100%;
+    height: 10vh;
+
+    position: absolute;
+    bottom: 0;
+
+    display: none;
+
+    background-color:#c7402b;
+    z-index: 1;
+}
+
+#nav_bar_celular{
+    width: 100%;
+    height: 100%;
+}
+#nav_bar_celular ul{
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav_bar_celular ul li{
+    width: 20vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_bar_celular ul li a{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+
+    font-size: 16px;
+    color: white;
+    transition: all .3s;
+}
+#nav_bar_celular ul li a:hover{
+    background-color: rgb(242, 242, 242);
+    color: #c7402b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  MAIN PRINCIPAL  */
+#main_principal{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+.container90_main{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+
+    /* background-color: blue; */
+}
+#container_principal_cliente{
+    padding-top: 50px;
+}
+
+
+
+
+
+/*  DASHBOARD DO CLIENTE  */
+.dashboard_cliente{
+    width: 100%;
+    height: 20vh;
+
+    /* background-color: green; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*::-webkit-scrollbar {
+    width: .8rem;
+}
+*::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #cf5600;
+    border-radius: 20px;
+    border: 0.2rem solid #ffffff;
+    cursor: pointer !important;
+}
+
+@keyframes aparecer {
+    100%{
+        opacity: 1;
+    }
+}

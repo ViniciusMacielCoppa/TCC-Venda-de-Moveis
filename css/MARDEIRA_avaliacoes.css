@@ -1,0 +1,138 @@
+
+#container_main_avaliacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+
+    height: 100vh;
+
+    background-color: white;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    border-left: 1px solid rgb(233, 233, 233);
+    border-right: 1px solid rgb(233, 233, 233);
+
+    box-shadow: 0px 0px 5px rgb(232, 232, 232);
+}
+#header_avaliacoes_titulo{
+    width: 100%;
+    height: 7vh;
+
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    
+    color: white;
+    background-color: #c7402b;
+}
+
+#main_avaliacoes_conteudo{
+    width: 100%;
+    height: 86vh;
+
+    display: flex;
+    flex-direction: column;
+
+    border-left: 1px solid rgb(212, 212, 212);
+    border-right: 1px solid rgb(212, 212, 212);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ESTILIZANDO AS AVALIAÇÕES  */
+#mostrar_avaliacoes{
+    display: grid;
+    gap: 20px;
+
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#avaliacoes_clientes_container{
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+
+    background-color: #ffc59c;
+    box-shadow: 0px 0px 10px rgb(213, 213, 213);
+
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+}
+
+.descricao_avaliacao_cliente{
+    width: 100%;
+    padding: 5px 5px 10px 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    border-bottom: 1px dashed rgb(142, 142, 142);
+}
+.descricao_avaliacao_cliente h2{
+    font-weight: 900;
+    color: #d45800;
+}
+
+.descricao_informacoes{
+    width: 100%;
+    padding: 10px 5px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.descricao_informacoes div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.descricao_informacoes div p{
+    font-weight: 900;
+    color: rgb(33, 33, 33);
+    text-align: center;
+}
+.descricao_informacoes div span{
+    text-align: center;
+}
+
+.bnt_pagina{
+    position: relative;
+}
+.bnt_pagina::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #c7402b;
+
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+#footer_avaliacoes_conteudo{
+    width: 100%;
+    height: 7vh;
+    background-color: #c7402b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

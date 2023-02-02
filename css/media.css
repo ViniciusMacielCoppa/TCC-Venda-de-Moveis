@@ -1,0 +1,159 @@
+/*  RESOLUÇÕES PARA O HEADER PRINCIPAL  */
+@media (max-width:1200px){
+    .container70{
+        width: 90%;
+    }
+}
+@media (max-width:1100px){
+    .suporte_usuario h2{
+        font-size: 25px;
+    }
+
+}
+@media (max-width:1000px){
+    .container70{
+        width: 95%;
+    }
+    #container_section{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media (max-width:900px){
+    #container_header nav ul{
+        gap: 10px;
+    }
+}
+@media (max-width:850px){
+    #container_header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    #container_header h1{
+        font-size: 50px;
+    }
+    .suporte_usuario h2{
+        font-size: 20px;
+    }
+}
+@media (max-width:700px){
+    #imagem_mardeira{
+        width: 90%;
+    }
+    .sobre_mardeira{
+        width: 250px;
+        height: 70%;
+        gap: 10px;
+
+    }
+    .sobre_mardeira h2{
+        font-size: 18px;
+        padding: 0;
+    }
+    .sobre_mardeira p{
+        font-size: 12px;
+    }
+    .suporte_usuario h2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:600px){
+    .sobre_mardeira{
+        width: 250px;
+        height: 70%;
+    }
+    .suporte_usuario{
+        flex-direction: column-reverse;
+    }
+    .suporte_usuario h2{
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:500px){
+    #container_header nav{
+        display: none;
+    }
+     #container_header h1{
+        font-size: 40px;
+    }
+    
+    #container_header{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .container70{
+        width: 90%;
+    }
+
+    .sobre_mardeira{
+        width: 200px;
+        height: 70%;
+        gap: 5px;
+
+    }
+    .sobre_mardeira h2{
+        font-size: 14px;
+    }
+
+    #imagem_mardeira{
+        width: 90%;
+    }
+    .suporte_usuario h2{
+        font-size: 20px;
+
+    }
+    .input_inserir, .input_inserir::placeholder{
+        font-size: 14px;
+    }
+    #bnt_suporte{
+        font-size: 10px;
+
+    }
+    #footer_principal p{
+        font-size: 14px;
+    }
+    .ficar_moveis{
+        justify-content: center;
+        padding: 5px;
+    }
+
+    #pesquisa_buscar{
+        width: 150px;
+        height: 40px;
+    }
+    #pesquisa_bnt{
+        width: 100px;
+        height: 40px;
+    }
+}
+
+
+@media (min-width:500px){
+    #container_header i{
+        display: none;
+    }
+}
+
+@media (max-width:350px){
+    .descricao_avaliacao_cliente{
+        text-align: center;
+    }
+    .descricao_informacoes{
+        gap: 20px;
+    }
+    .suporte_usuario h2{
+        font-size: 16px;
+
+    }
+}

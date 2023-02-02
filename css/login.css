@@ -1,0 +1,224 @@
+
+
+
+/*  RESETANDO ALGUMAS CONFIGURAÇÕES PADRÕES DO HTML  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial'; 
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    background-color: #f8f8f8;
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+    width: 450px;
+    height: 450px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgb(202, 202, 202);
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 10px;
+
+    opacity: 0;
+    animation: aparecer .3s ease forwards;
+}
+
+#formulario_login{
+    width: 100%;
+    padding: 10px 0;
+
+    display: grid;
+    gap: 10px;
+
+}
+
+
+#formulario_login h1{
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+    color: #ce3720;
+    margin-bottom: 20px;
+}
+
+#label_email, #label_senha{
+    width: 90%;
+    margin: auto;
+}
+#label_senha{
+    margin-bottom: 10px;
+
+    position: relative;
+}
+
+.input_inserir{
+    width: 100%;
+    height: 50px;
+    
+    border: none;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #656869;
+    margin: auto;
+    
+    background-color: #e5ebeb;
+}
+.input_inserir:focus{
+    background-color: rgb(215, 223, 223);
+    outline: none;
+}
+.senha{
+    padding: 0 30px 0 10px;
+
+}
+
+
+#formulario_login label i{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+
+
+
+#bnt_logar{
+    width: 90%;
+    height: 55px;
+    margin: auto;
+    border-radius: 3px;
+
+    background-color: #65b967;
+    box-shadow: 3px 3px 3px rgb(226, 226, 226);
+    color: white;
+
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .3s;
+}
+#bnt_logar:hover{
+    background-color: #54a355;
+}
+
+#bnt_registrar{
+    width: 90%;
+    height: 55px;
+    margin: auto;
+    border-radius: 3px;
+
+    background-color: #d8412a;
+    box-shadow: 3px 3px 3px rgb(226, 226, 226);
+    color: white;
+
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bnt_registrar:hover{
+    background-color: #be321c;
+}
+
+#bnt_voltar{
+    width: 90%; 
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+#bnt_voltar a{
+    color:#656869;
+    font-size: 18px;
+    font-weight: 700;
+
+    transition: all .3s;
+}
+#bnt_voltar a:hover{
+    color:#be321c;
+
+}
+
+
+
+
+
+.esconder{
+    display: none;
+}
+.olho_fechado{
+    position: absolute;
+    bottom: 10px;
+    right: 1px;
+    color: #646262;
+
+    cursor: pointer;
+}
+.olho_aberto{
+    position: absolute;
+    bottom: 10px;
+    right: 1px;
+    color: #626364;
+
+    cursor: pointer;
+}
+
+
+
+
+@keyframes aparecer {
+    100%{
+        opacity: 1;
+    }
+}

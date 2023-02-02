@@ -1,0 +1,423 @@
+/*  ARMAZENANDO CORES EM VARIAVEIS  */
+:root{
+    --bnt_cor: #DA4E37;
+    --bnt_cor_hover: #c7402b;
+
+
+
+}
+
+/* =================  ARQUIVO CSS PARA A PÁGINA MOVEIS.PHP */
+
+/*  BOTAO PARA ADICIONAR MOVEIS NOVOS O SISTEMA  */
+#bnt_add_novo{
+    width: 200px;
+    height: 6vh;
+
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    background-color: var(--bnt_cor);
+    color: white;
+    transition: all .3s;
+}
+/*  BOTAO PARA VOLTAR A VER A LISTA DOS MOVEIS  */
+#bnt_voltar_movel{
+    width: 200px;
+    height: 6vh;
+
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    background-color: var(--bnt_cor);
+    color: white;
+    transition: all .3s;
+    display: none;
+}
+#bnt_add_novo:hover{
+    background-color: var(--bnt_cor_hover);
+
+}
+#bnt_voltar_movel:hover{
+    background-color: var(--bnt_cor_hover);
+
+}
+
+
+
+/*  ESTILIZAÇÃO PARA VER OS MOVEIS  */
+#mostrar_moveis{
+    /* height: 100%; */
+    overflow-y: auto;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    padding: 10px;
+    /* background-color: red; */
+}
+/*  ESTILZAÇÃO PARA ADICIONAR UM NOVO MOVEL  */
+#add_novo{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    flex-direction: column;
+
+    display: none;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+/*  FORMULARIO PARA ADICIONAR MOVEL  */
+
+.adc_movel_titulo{
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+    color: rgb(148, 148, 148);
+    /* background-color: rgb(252, 111, 111); */
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 10px;
+}
+.adc_movel_titulo h2{
+    font-size: 1.7rem;
+    color: rgb(119, 119, 119);
+}
+
+/*  CONTAINER QUE CONTEM O FORMULARIO PARA ADICIONAR UM MOVEL AO SISTEMA  */
+.formulario_add_movel{
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    display: flex;
+    /* background-color: red; */
+}
+
+/*  ESTILIZANDO OS INPUTS QUE DA PRA ESCREVER  */
+.input_escrever{
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(242, 246, 247);
+    padding: 10px;
+}
+.input_escrever:focus{
+    outline: 1px solid #ffafa3;
+}
+
+/*  AJUSTANDO A LABEL PARA O TITULO E O INPUT FICAR EM COLUNA  */
+.formulario_add_movel form label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/*  ESTILIZANDO O TITULO P  */
+.formulario_add_movel form label p{
+    color: rgb(126, 126, 126);
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+/*  ESTILIZANDO O BOTÃO ENVIAR/LIMPAR DO FORMULARIO  */
+.botao_formulario{
+    width: 50%;
+    border-radius: 3px;
+    background-color: var(--bnt_cor);
+    color: rgb(244, 244, 244);
+    font-size: 1rem;
+    border: none;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.botao_formulario:hover{
+    background-color: var(--bnt_cor_hover);
+    color: white;
+}
+#label_botoes{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/*  ESTILIZANDO O FORMULARIO  */
+#formulario{
+    width: 50%;
+    margin: auto ;
+    /* background-color: rgb(255, 211, 211); */
+
+    display: grid;
+    /*  GRID PARA ENCAIXAR AS INPUTS EM CADA PARTE  */
+    grid-template-areas:
+    'nome nome tipo tipo'
+    'descricao descricao descricao descricao'
+    'valor valor medidas medidas'
+    'imagem imagem imagem imagem'
+    'botoes botoes botoes botoes';
+    gap: 10px;
+}
+#label_descricao{
+    grid-area: descricao;
+}
+#label_nome{
+    grid-area: nome;
+}
+#label_tipo{
+    grid-area: tipo;
+}
+#label_valor{
+    grid-area: valor;
+}
+#label_medidas{
+    grid-area: medidas;
+}
+#label_botoes{
+    grid-area: botoes;
+}
+#label_imagem{
+    grid-area: imagem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 3px;
+    background-color: #DA4E37;
+    color: rgb(244, 244, 244);
+    font-size: 1.3rem;
+    border: none;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#label_imagem:hover{
+    background-color: #c7402b;
+    color: white;
+}
+input[type="file"] {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ESTILIANDO OS MOVEIS  */
+
+#section_listar_moveis{
+    width: 300px;
+
+
+    position: relative;
+
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0px 0px 10px rgb(201, 201, 201);
+
+    color: rgb(102, 102, 102);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#container_conteudo{
+    padding-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#container_imagem{
+    width: 100%;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: red; */
+}
+#container_imagem img{
+    border-radius: 6px;
+    height: 140px;
+}
+
+
+
+.conteudo_primario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    text-align: center;
+
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 3px;
+
+
+    width: 97%;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+.conteudo_primario h2,#section_listar_moveis p{
+    text-transform: capitalize;
+
+}
+.conteudo_primario p{
+    font-size: 12px;
+}
+
+.movel_nome{
+    color: rgb(214, 86, 0);
+}
+
+
+#conteudo_secundario{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 5px 5px 10px;
+    text-align: center;
+
+
+}
+
+#conteudo_secundario div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+#conteudo_secundario div p{
+    font-size: 12px;
+}
+#conteudo_secundario div h3{
+    font-size: 22px;
+}
+
+#conteudo_secundario .movel_valor p{
+    color: rgb(255, 85, 0);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+#bnt_excluir_movel{
+    height: 30px;
+    width: 50%;
+
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translatex(-50%);
+
+    border: none;
+
+    background-color: #DA4E37;
+    color: rgb(244, 244, 244);
+
+    cursor: pointer;
+
+    border-radius: 3px;
+    transition: all .3s;
+}
+#bnt_excluir_movel:hover{
+    background-color: #c7402b;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ESTILIZANDO O FORMULARIO QUE SERVE PARA BUSCAR  */
+#pesquisa_moveis{
+    display: flex;
+    gap: 10px;
+}
+
+/*  INPUT PARA BUSCAR  */
+#pesquisa_buscar{
+    width: 15vw;
+    height: 6vh;
+
+    border-radius: 3px;
+    border: 1px solid rgb(255, 77, 0);
+    padding: 5px;
+    color: rgb(255, 76, 32);
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+#pesquisa_buscar:focus{
+    outline: none;
+}
+#pesquisa_buscar::placeholder{
+    color: rgb(248, 135, 107);
+    font-weight: 500;
+}
+
+/*  BOTÃO DE BUSCA  */
+#pesquisa_bnt{
+    width: 10vw;
+    height: 6vh;
+
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    background-color: #DA4E37;
+    color: white;
+    transition: all .3s;
+}
+#pesquisa_bnt:hover{
+    background-color: #c7402b;
+}

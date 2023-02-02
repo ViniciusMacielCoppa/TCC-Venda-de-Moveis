@@ -1,0 +1,205 @@
+/*  RESETANDO ALGUMAS CONFIGURAÇÕES PADRÕES DO HTML  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    animation: aparecer .3s ease forwards;
+    opacity: 0;
+    background-color: rgb(242, 242, 242);
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+/*  PARA CELULAR  */
+#section_para_celular{
+    width: 100%;
+    height: 10vh;
+
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+
+    background-color:#c7402b;
+}
+
+#nav_bar_celular{
+    width: 100%;
+    height: 100%;
+}
+#nav_bar_celular ul{
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav_bar_celular ul li{
+    width: 20vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_bar_celular ul li a{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+
+    font-size: 16px;
+    color: white;
+    transition: all .3s;
+}
+#nav_bar_celular ul li a:hover{
+    background-color: rgb(242, 242, 242);
+    color: #c7402b;
+}
+
+
+
+
+
+
+
+
+/*  MAIN PRINCIPAL  */
+#main_definicoes{
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+.Conf_conta{
+    width: 100%;
+    height: 7vh;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: white;
+    box-shadow: 0px 0px 3px rgb(203, 203, 203);
+}
+.Conf_conta i{
+    width: 50px;
+    height: 7vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #c7402b;
+    font-size: 20px;
+}
+.Conf_conta h2{
+    font-size: 20px;
+    color: rgb(35, 34, 34);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+.definicoes_conta{
+    width: 100%;
+    
+}
+.definicoes_conta h2{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+    padding: 15px 0 10px 10px;
+}
+
+.def_opcoes{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.def_opcoes a{
+    background-color: white;
+
+    padding: 10px;
+    color: rgb(44, 44, 44);
+    font-weight: 700;
+
+    display: flex;
+    gap: 10px;
+}
+.def_opcoes a:last-child{
+    color: rgb(209, 12, 12);
+}
+
+
+
+
+#footer_def{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 900;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes aparecer {
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,437 @@
+/*  RESETANDO ALGUMAS CONFIGURAÇÕES PADRÕES DO HTML  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    position: relative;
+
+    animation: aparecer .3s ease forwards;
+    opacity: 0;
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+/*  HEADER INICIAL  */
+#header_principal{
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+
+    /* background-color: blue; */
+}
+
+/*  CONTAINER PARA DEIXAR O CONTEUDO CENTALIZADO  */
+.container70{
+    width: 70%;
+    margin: auto;
+    
+    /* background-color: red; */
+}
+#container_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#container_header h1{
+    font-size: 40px;
+    color: #c7402b;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif; 
+}
+
+/*  AJUSTANDO AS NAVBAR DO HEADER PRINCIPAL  */
+#container_header nav{
+    display: flex;
+    align-items: center;
+}
+
+#container_header nav ul li a{
+    color: #333333;
+    font-weight: 900;
+    font-size: 18px;
+
+    padding: 5px 5px;
+}
+
+/*  ESTILIZANDO A PRIMEIRA NAVBAR DO HEADER  */
+#navbar_principal ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.bnt_pagina{
+    position: relative;
+}
+.bnt_pagina::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #c7402b;
+
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+#navbar_principal ul li a{
+    transition: all .3s;
+}
+#navbar_principal ul li a:hover{
+    color: #c7402b;
+}
+
+
+/*  ESTILIZANDO A NAVBAR DO LOGIN E CADASTRO  */
+
+#navbar_login ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#navbar_login ul li:last-child{
+    transition: all .3s;
+    padding: 10px 15px;
+}
+#navbar_login ul li:last-child a{
+    padding: 10px 15px;
+    color: white;
+    border-radius: 3px;
+
+    background-color: #c7402b;
+}
+#navbar_login ul li:last-child:hover{
+    transform: scale(1.1);
+}
+
+#navbar_login ul li:first-child a{
+    border-radius: 3px;
+    color: #c7402b;
+
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  MENU RESPONSIVO  */
+#header_principal i{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    color: #c7402b;
+}
+.esconder{
+    display: none;
+}
+
+#menu_resposivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 10px;
+
+    position: absolute;
+    left: -100%;
+    top: 70px;
+
+    width: 100%;
+    height: 90%;
+    transition: all .3s;
+
+    background-color: #c7402b;
+    z-index: 10;
+}
+#menu_resposivo a{
+    background-color: white;
+    width: 80%;
+    padding: 5px;
+    color: #c7402b;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: all .3s;
+}
+#menu_resposivo a:hover{
+    width: 85%;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  SECTION DA EXPLICAÇÃO SOBRE O MARDEIRA  */
+#section_principal{
+    width: 100%;
+    
+    margin-top: 50px;
+}
+#container_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+
+    width: 100%;
+    padding: 0 10px;
+
+    /* background-color: red; */
+}
+
+/*  SOBRE MARDEIRA  */
+.sobre_mardeira{
+    width: 450px;
+    height: 250px;
+    padding: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    border-radius: 3px;
+
+    background-color: rgba(255, 255, 255, 0.345);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgb(18, 18, 18);
+
+    color: rgb(0, 0, 0);
+}
+/*  ESTILIZANDO A IMAGE  */
+#section_principal img{
+    border-radius: 3px;
+    margin: auto;
+}
+.sobre_mardeira h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif; 
+
+    filter: drop-shadow(0px 0px 1px rgb(252, 252, 252));
+}
+.sobre_mardeira spam{
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif; 
+    color: #c7402b;
+}
+.sobre_mardeira p{
+    filter: drop-shadow(0px 0px 1px rgb(252, 252, 252));
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  MAIN QUE MOSTRARÁ 4 AVALIAÇÕES  */
+#main_principal{
+    width: 100%;
+    position: relative;
+    margin-top: 85px;
+
+    
+    /* background-color: red; */
+}
+#container_main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+/*  DIV Q CONTEM O H2 E A LINHA  */
+.suporte_usuario{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.linha{
+    width: 100%;
+    height: 2px;
+
+    background-color: rgb(213, 213, 213); 
+}
+.suporte_usuario h2{
+    color: #c7402b;
+    font-size: 30px;
+    width: 70%;
+
+}
+
+
+/*  FORMULARIO PARA SUPORTE  */
+#formulario_contato{
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+    box-shadow: 0px 0px 30px rgb(216, 216, 216);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 3px;
+
+    padding: 50px 20px;
+}
+.input_inserir{
+    border: 2px solid #dedede;
+    height: 50px;
+
+    border-radius: 10px;
+    padding: 10px 10px 10px 30px;
+    font-size: 18px;
+    width: 100%;
+    resize: none;
+    color: #a22809;
+    font-weight: 700;
+    
+}
+.input_inserir:focus{
+    outline: none;
+}
+.input_inserir::placeholder{
+    font-weight: 900;
+    color: #de4c36;
+
+}
+label{
+    width: 100%;
+    position: relative;
+}
+.icone_user, .icone_email{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translatey(-50%);
+    color: #c7402b;
+}
+.icone_descricao{
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    color: #c7402b;
+}
+.area{
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+}
+#bnt_suporte{
+    background-color: #c7402b;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 20px;
+}
+#bnt_suporte:hover{
+    background-color: #b1311d;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  FOOTER  */
+#footer_principal{
+    padding: 30px 0;
+    text-align: center;
+
+    margin-top: 50px;
+
+    background-color: #ae321f;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+*::-webkit-scrollbar {
+    width: .8rem;
+}
+*::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #c7402b;
+    border-radius: 20px;
+    border: 0.2rem solid #ffffff;
+    cursor: pointer !important;
+}
+
+@keyframes aparecer {
+    100%{
+        opacity: 1;
+    }
+}

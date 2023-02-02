@@ -1,0 +1,306 @@
+/*  DECLARANDO AS CORES DO SITE EM VÁRIAVEIS PARA NO FUTURO PODER TROCAR COM FACILIDADE  */
+:root{
+    --MARdeira: #FEA43E;
+    --header_fraco: #DA4E37;
+    --header_forte: #c7402b;
+    --header_menu_lateral: #27272f;
+    --menu_lateral: #232329;
+}
+
+
+/*  RESETANDO ALGUMAS CONFIGURAÇÕES PADRÕES DO HTML  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial'; 
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    opacity: 0;
+    animation: aparecer .3s ease forwards;
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+
+/* ===================== ESTRUTURA DO SITE ==================== */
+
+
+
+/*  ESSE É A PARTE DE CIMA DA TELA DO ADM */
+#header_home{
+    width: 100%;
+    height: 9vh;
+
+    display: flex;
+}
+
+/*  CONTAINER DO TITULO MARdeira  */
+.header_titulo_site{
+    background-color: var(--header_fraco);
+    width: 20vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  AJUSTANDO O NOME MARdeira  */
+.header_titulo_site h1{
+    color: var(--MARdeira);
+    font-size: 3rem;
+}
+
+/*  CONTAINER PARA COMPLEMENTAR OQ FALTA NO HEADER_HOME  */
+.header_complemento{
+    width: 80vw;
+    height: 100%;
+    background-color: var(--header_forte);
+}
+
+
+
+
+/*  ESTE É O MAIN PRINCIPAL, QUE IRÁ CONTER O CONTEUDO PRINCIPAL DA PÁGINA  */
+#main_home{
+    width: 100%;
+    height: 91vh;
+
+    display: flex;
+}
+
+
+
+
+/* ===================== ESTRUTURA DO MENU LATERAL ==================== */
+
+
+/*  ESSE É O MENU LATERAL ESQUERDO  */
+#menu_lateral{
+    width: 20vw;
+    height: 100%;
+    background-color: var(--menu_lateral);
+}
+
+/*  HEADER DO MENU LATERAL ESQUERDO  */
+#header_menu_lateral{
+    width: 100%;
+    height: 20vh;
+    background-color: var(--header_menu_lateral);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*  AJUSTANDO A DIV Q VAI FICAR A FOTO DO USUARIO  */
+.foto_usuario{
+    width: 100px;
+    height: 100px;
+    background-color: #31313a;
+    border-radius: 50%;
+    margin-left: -30px;
+}
+.foto_usuario img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*  AJUSTANDO O NOME E SUBTITULO DO USUARIO  */
+.informacao_usuario{
+    color: rgb(255, 255, 255);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.informacao_usuario p{
+    opacity: .7;
+}
+
+
+/* ===================== ESTRUTURA DA NAVEGAÇÃO MENU LATERAL ==================== */
+
+
+/*  AJUSTANDO A NAVEGAÇÃO DO MENU LATERAL  */
+#nav_menu_lateral{
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 5px;
+    overflow: auto;
+}
+#nav_menu_lateral ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+#nav_menu_lateral ul li{
+    width: 100%;
+    color: rgb(188, 188, 188);
+    font-size: 1.1rem;
+
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+}
+#nav_menu_lateral ul li a{
+    color: rgb(188, 188, 188);
+    padding: 10px 0 10px 0;
+    width: 100%;
+}
+#nav_menu_lateral ul li i{
+    width: 50px;
+    height: 100%;
+    margin-left: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  AJUSTANDO A INTERAÇÃO COM OS BOTÕES DO NAV  */
+#nav_menu_lateral ul li:hover{
+    background-color: rgb(46, 46, 57);
+    color: white;
+    border-radius: 3px;
+}
+#nav_menu_lateral ul li a:hover{
+    color: white;
+}
+
+
+
+
+/* ===================== ESTRUTURA DO CONTEUDO PRINCIPAL DA PÁGINA ==================== */
+
+
+#main_conteudo_principal{
+    width: 80vw;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(250, 250, 250);
+}
+
+/*  HEADER DO CONTEUDO PRICIPAL  */
+.header_conteudo_principal{
+    width: 95%;
+    height: 10vh;
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_conteudo_principal h2{
+    color: rgb(92, 92, 92);
+    font-size: 2rem;
+}
+
+/*  ESSA É A MAIN ONDE O CONTEUDO IRÁ FICAR  */
+.main_inicio{
+    width: 95%;
+    height: 78vh;
+    overflow-y: auto;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+#caixas_informacoes{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgb(201, 201, 201);
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding: 20px;
+}
+#caixas_informacoes h3{
+    font-weight: 500;
+    font-size: 2rem;
+}
+#caixas_informacoes p{
+    font-size: 3rem;
+}
+
+#caixas_informacoes div{
+    border-radius: 3px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+    width: 23%;
+    min-width: 230px;
+    height: 20vh;
+
+    color: white;
+}
+.container_qntd_usuarios{
+    background-color: #50a64e;
+}
+.container_qntd_avaliacoes{
+    background-color: #327AB7;
+}
+.container_qntd_moveis{
+    background-color: #b62a2a;
+}
+.container_qntd_pedidos{
+    background-color: #b62aa6;
+}
+
+
+
+
+
+
+
+
+
+*::-webkit-scrollbar {
+    width: .8rem;
+}
+*::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #D83924;
+    border-radius: 20px;
+    border: 0.2rem solid #ffffff;
+    cursor: pointer !important;
+}
+@keyframes aparecer {
+    100%{
+        opacity: 1;
+    }
+}

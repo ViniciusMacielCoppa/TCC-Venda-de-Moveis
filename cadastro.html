@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="icon" href="img/mardeira_icone.png"> 
+    <title>MARdeira | Cadastro</title>
+</head>
+<body>
+
+    <section>
+        <form name="formulario_cadastro" action="cadastrar.php" method="post" id="formulario_cadastro">
+            <h1>Cadastro</h1>
+            
+            <label id="label_nome">
+                <input type="text" class="nome input_inserir" name="user_nome" placeholder="Insira um nome" maxlength="100">
+            </label>
+            <label id="label_telefone">
+                <input type="text" class="telefone input_inserir" name="user_telefone" placeholder="Insira um telefone" maxlength="20">
+            </label>
+            <label id="label_cpf">
+                <input type="text" class="cpf input_inserir" name="user_cpf" placeholder="Insira um cpf" maxlength="11">
+            </label>
+            <label id="label_endereco">
+                <input type="text" class="endereço input_inserir" name="user_endereco" placeholder="Insira um endereço" maxlength="200">
+            </label>
+            <label id="label_email">
+                <input type="text" class="email input_inserir" name="user_email" placeholder="Email" maxlength="150">
+            </label>
+            <label id="label_senha">
+                <input type="password" class="senha input_inserir" name="user_senha" placeholder="Senha" maxlength="50">
+                <i class="fa-solid fa-eye olho_aberto1 esconder"></i>
+                <i class="fa-sharp fa-solid fa-eye-slash olho_fechado1"></i>
+            </label>
+            <label id="label_confirmar_senha">
+                <input type="password" class="senha confirmar_senha input_inserir" name="user_confirmar_senha" placeholder="Confirme sua senha" maxlength="50">
+                <i class="fa-solid fa-eye olho_aberto2 esconder"></i>
+                <i class="fa-sharp fa-solid fa-eye-slash olho_fechado2"></i>
+            </label>
+
+            <input type="submit" name="bnt_cadastrar" id="bnt_cadastrar" value="Cadastrar">
+            <a href="login.html" id="bnt_logar">Logar</a>
+            <div id="bnt_voltar">
+                <a href="index.html"><i class="fa-solid fa-backward"></i> voltar à inicial</a>
+            </div>
+        </form>
+    </section>
+
+    <script src="javascript/cadastro.js"></script>
+
+</body>
+</html>

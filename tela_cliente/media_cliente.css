@@ -1,0 +1,80 @@
+/*  RESOLUÇÕES PARA O HEADER PRINCIPAL  */
+@media (max-width:800px){
+    .filtro_pedidos{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .bt_pedido_filtro{
+        width: 100%;
+    }
+
+}
+@media (max-width:670px){
+    .ficar_moveis{
+        gap: 10px;
+        padding: 10px;
+    }
+    .info_pedido, .info_pedido_cliente_aceitar, .info_pedido_adm_recusar{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:600px){
+    .ficar_moveis{
+        justify-content: center;
+        gap: 30px;
+        padding: 10px;
+    }
+}
+@media (max-width:500px){
+    #header_principal{
+        display: none;
+    }
+    #section_para_celular{
+        display: flex;
+    }
+    #body_avaliacao{
+        padding-bottom: 20vh;
+    }
+    #body_pedidos{
+        padding-bottom: 17vh;
+    }
+    .container90_main_avaliacoes{
+        width: 95%;
+    }
+    #pesquisa_buscar{
+        width: 150px;
+        height: 40px;
+    }
+    #pesquisa_bnt{
+        width: 100px;
+        height: 40px;
+    }
+}
+@media (max-width:400px){
+    #nav_bar_celular ul li a{
+        font-size: 14px;
+    }
+}
+@media (max-width:350px){
+    #nav_bar_celular ul li a{
+        font-size: 12px;
+    }
+    .container_fazer_pedidos_meus a{
+        font-size: 16px;
+    }
+}
+@media (max-width:300px){
+    .Conf_conta h2{
+        font-size: 18px;
+    }
+}
+@media (max-width:280px){
+    .Conf_conta h2{
+        font-size: 16px;
+    }
+}
+@media (max-width:260px){
+    .Conf_conta h2{
+        font-size: 14px;
+    }
+}

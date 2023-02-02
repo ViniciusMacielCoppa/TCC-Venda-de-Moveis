@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" href="img/mardeira_icone.png"> 
+    <title>MARdeira</title>
+</head>
+<body>
+
+    <header id="header_principal">
+        <div class="container70" id="container_header">
+            <h1>MARdeira</h1>
+            <i class="fa-solid fa-bars" id="bnt_abrir" onclick="abrir_menu()"></i>
+            <i class="fa-solid fa-x esconder" id="bnt_fechar"></i>
+
+            <nav id="navbar_principal">
+                <ul>
+                    <li class='bnt_pagina'> <a href="#">Início</a> </li>
+                    <li> <a href="MARDEIRA_avaliacoes.php">Avaliações</a> </li>
+                    <li> <a href="MARDEIRA_moveis.php">Móveis</a> </li>
+                    <li> <a href="#contato">Contato</a> </li>
+                </ul>
+            </nav>
+            <nav id="navbar_login">
+                <ul>
+                    <li> <a href="login.html">Login</a> </li>
+                    <li> <a href="cadastro.html">Cadastre-se</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="menu_resposivo">
+        <a href="MARDEIRA_avaliacoes.php">Avaliações</a>
+        <a href="MARDEIRA_moveis.php">Móveis</a>
+        <a href="#contato" class="bnt_contato">Contato</a>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastre-se</a>
+    </div>
+    
+    <section id="section_principal">
+        <div class="container70" id="container_section">
+            <img src="img/depositphotos_100906810-stock-photo-craftsman-cutting-plank-with-circular.jpg" alt="imagem" id="imagem_mardeira">
+            <div class="sobre_mardeira">
+                <h2>O que é <spam>MARdeira</spam>?</h2>
+                <p>Somos uma marcenária de confiança, sempre entregando o máximo de satisfação aos clientes. Consiga qualquer móvel com a qualidade e suporte que cabe no seu bolso.</p>
+                <p>Analise nossos móveis planejados mais populares!</p>
+            </div>
+        </div>
+    </section>
+
+    <main id="main_principal">
+        <div class="container70" id="container_main">
+            <a name="contato"></a>
+            <div class="suporte_usuario">
+                <h2>Central de suporte ao cliente</h2> <div class="linha"></div>
+            </div>
+            <form id="formulario_contato">
+                <label>
+                    <i class="fa-solid fa-user icone_user"></i>
+                    <input type="text" class="input_inserir" placeholder="Seu nome">
+                </label>
+                <label>
+                    <i class="fa-solid fa-envelope icone_email"></i>
+                    <input type="text" class="input_inserir" placeholder="Um E-mail válido">
+                </label>
+                <label>
+                    <i class="fa-solid fa-address-card icone_descricao"></i>
+                    <textarea class="input_inserir area" rows='5' placeholder="Nos conte o que esta acontecendo"></textarea>
+                </label>
+
+                <button id="bnt_suporte">ENVIAR E-MAIL AO SUPORTE</button></i>
+            </form>
+        </div>
+    </main>
+
+    <footer id="footer_principal">
+        <p>MARdeira © 2022 | Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="javascript/menu.js"></script>
+</body>
+</html>
