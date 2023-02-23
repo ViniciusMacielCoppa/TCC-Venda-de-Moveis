@@ -1,17 +1,3 @@
-function msg(){
-    var algo = document.querySelector('#descricao');
-    if(algo.value == ''){
-    alert("preencha o campo para fazer uma avaliação!");
-    return true;
-}else{
-    alert("avaliação feita!");
-    
-    }
-    return false;
-}
-
-
-
 
 //  FUNÇÃO APARA APARECER A TELA DE ADICIONAR UM NOVO MOVEL AO SISTEMA
 document.querySelector('#bnt_add_novo').addEventListener('click', function(){
